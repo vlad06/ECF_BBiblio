@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<livres> 
+   <livre langue="fr"> 
+      <titre>Clandestin</titre> 
+      <auteur>James Ellroy</auteur>
+      <date>1990</date>
+      <editeur>Rivages</editeur> 
+      <url>http://www.editeur-rivages.fr/livres/ellroy/Clandestin.html</url>
+      <urlPdf>http://www.editeur-rivages.fr/livres/ellroy/Clandestin.pdf</urlPdf>
+      <categorie>Roman français</categorie>
+      <jury>Robert Bidochon</jury>
+      <notation>
+        <style>1</style>
+        <illustrations>0</illustrations>
+        <miseEnPage>1</miseEnPage>
+        <emotion>1</emotion>
+      </notation>
+   </livre> 
+
+   <livre langue="en"> 
+      <titre>WTF</titre> 
+      <auteur>John Dean</auteur>
+      <date>1990</date>
+      <editeur>grin</editeur> 
+      <url>http://www.grin.en/books/JDean/WTF.html</url>
+      <urlPdf>http://www.grin.en/books/JDean/WTF.pdf</urlPdf>
+      <categorie>documentaire</categorie>
+      <jury>Bernard Minet</jury>
+      <notation>
+        <style>8</style>
+        <illustrations>9</illustrations>
+        <miseEnPage>7</miseEnPage>
+        <emotion>10</emotion>
+      </notation>
+   </livre>
+
+   <livre langue=""> 
+      <titre></titre> 
+      <auteur></auteur>
+      <date></date>
+      <editeur></editeur> 
+      <url></url>
+      <urlPdf></urlPdf>
+      <categorie></categorie>
+      <jury></jury>
+      <notation>
+        <style></style>
+        <illustrations></illustrations>
+        <miseEnPage></miseEnPage>
+        <emotion></emotion>
+      </notation>
+   </livre> 
+</livres>
