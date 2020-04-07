@@ -1,3 +1,85 @@
 html {
   font-size: 10px;
 }
+
+body {
+  font-size: 2rem;
+}
+
+header {
+  background: teal;
+  border: 5px solid red;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size:8rem;
+  border: 1px solid red;
+}
+
+.nav ul {
+  margin-top: 0px;
+  background: teal;
+  list-style: none;
+  display: flex;
+  border: 1px solid red;
+}
+
+.nav ul li {
+  flex: 1;
+  justify-content: space-evenly;
+
+}
+
+
+#container {
+  border: 5px solid green;
+}
+
+#content {
+  border: 5px solid blue;
+}
+
+aside {
+  border: 5px solid red;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 1rem;  
+}
+
+aside iframe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  border: 5px solid goldenrod;
+}
+
+
+footer {
+  background: teal;
+  border: 5px solid red;
+}
+
+
+
+#reseauxSociaux img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 30%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#reseauxSociaux {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  list-style-type: none;
+  justify-content: flex-end;
+  
+}
