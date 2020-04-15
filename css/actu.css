@@ -1,3 +1,4 @@
+  /* Style supplémentaire pour la page d'actualité  */
   .enteteActu {
     font-size: 3rem;
     font-weight: bold;
@@ -7,14 +8,12 @@
     display: flex;
     justify-content: space-between;
   }
-  /* .dateActu {
-    
-  } */
   .actu {
     border: 1px solid black;
     padding: 1rem;
     margin: 0;
   }
+  /* Style pour les boutons de partage  */
   .shareIt {
     margin-left: 4rem;
     padding: 1rem;

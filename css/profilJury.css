@@ -1,3 +1,4 @@
+/* Le style de la page profil jury  */
 table, th, td {
   border: 1px solid black;
   text-align: center;
@@ -27,10 +28,6 @@ th {
   justify-content: space-between;
 }
 
-/* #categoriesDuJury {
-  margin-top: 2rem;
-  text-align: center;
-} */
 select {
   padding: .5rem;
   width: 100%;
@@ -73,7 +70,7 @@ textarea {
   padding: 6px 12px;
   border: 1px solid #ccc;
 }
-
+/* Style pour le bouton de téléchargement du pdf  */
 #downloadPdfBook {
   padding: 1rem;
   background-color: blue;

@@ -1,3 +1,5 @@
+// Code pour la validation du mot de passe que le jury ou auteur/éditeur doit définir
+// lorsqu'il fait sa première connexion
 var myPassword = document.getElementById("password");
 var minuscule = document.getElementById("minuscule");
 var majuscule = document.getElementById("majuscule");
@@ -5,7 +7,7 @@ var nombre = document.getElementById("nombre");
 var longueur = document.getElementById("longueur");
 var btnReset = document.querySelector("button[type=reset]");
 
-// When the user hit the button reset
+// Si l'utilisateur clic sur le bouton reset
 btnReset.addEventListener("click", function() {
   minuscule.classList.remove("valid");
   minuscule.classList.add("invalid");
@@ -17,9 +19,9 @@ btnReset.addEventListener("click", function() {
   longueur.classList.add("invalid");
 });
 
-// When the user starts to type something inside the password field
+// Dès que l'utilisateur commence à saisir qqch dans le champ password
 myPassword.onkeyup = function() {
-    // Validate lowercase letters
+    // Validation des lettres minuscules
     var lowerCaseLetters = /[a-z]/g;
     if(myPassword.value.match(lowerCaseLetters)) {  
       minuscule.classList.remove("invalid");
@@ -29,7 +31,7 @@ myPassword.onkeyup = function() {
       minuscule.classList.add("invalid");
     }
     
-    // Validate majuscule letters
+    // Validation des lettres majuscules
     var upperCaseLetters = /[A-Z]/g;
     if(myPassword.value.match(upperCaseLetters)) {  
       majuscule.classList.remove("invalid");
@@ -39,7 +41,7 @@ myPassword.onkeyup = function() {
       majuscule.classList.add("invalid");
     }
 
-    // Validate numbers
+    // Validation des chiffres
     var numbers = /[0-9]/g;
     if(myPassword.value.match(numbers)) {  
       nombre.classList.remove("invalid");
@@ -49,7 +51,7 @@ myPassword.onkeyup = function() {
       nombre.classList.add("invalid");
     }
     
-    // Validate longueur
+    // Validation de la taille du password
     if(myPassword.value.length >= 10) {
       longueur.classList.remove("invalid");
       longueur.classList.add("valid");

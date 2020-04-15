@@ -1,3 +1,4 @@
+//Permet de faire le lien entre la page palmares et la page perso des lauréats
 $(document).ready(function() {
 
   $("a[href*=pagePersoLaureat").on("click", (function() {

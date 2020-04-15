@@ -1,6 +1,7 @@
 // *******************************************************************
 // *****************************LISTENERS*****************************
 // *******************************************************************
+
 // listeners pour les boutons modifier qui servent à rectifier les champs txt
 document.querySelectorAll("button[value=modifier]").forEach((bouton) => {
   bouton.addEventListener("click", fctModifTxt);
@@ -23,6 +24,7 @@ document.querySelector("button[value=ajouter]").addEventListener("click", fctAjo
 // *******************************************************************
 // *******************************FONCTIONS*********************************
 // *******************************************************************
+
 // Permet la modification des txtBox une par une et change le style du bouton
 function fctModifTxt(event) {
   if(event.target.innerHTML == "Modifier") {

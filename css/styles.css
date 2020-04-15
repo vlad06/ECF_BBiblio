@@ -97,7 +97,7 @@ h1 {
 #content {
   width: 90%;
 }
-/* Le style pour la partie aside qui contient les fils des réseaux sociaux */
+/* Le style pour la partie aside qui contient les fils d'actus des réseaux sociaux */
 aside {
   display: flex;
   flex-direction: column;

@@ -1,11 +1,14 @@
+
+// Code permettant la navigation sur le site
+
 $(document).ready(function() {
   //The NAV LINKS
   $("#nav li > a").on("click", ajaxCall);
   // THE LOGO LINK
   $("#logo a").on("click", ajaxCall);
-  // Mention legales link
+  // the link to "mentions légales"
   $("#leftAndRights li > a").on("click", ajaxCall);
-  // The connexion link
+  // The connexion link (top-right of the page)
   $("#theConnexion a").on("click", ajaxCall);
 
   // this call is made for calling the pages and showing them
@@ -27,7 +30,7 @@ $(document).ready(function() {
         $("#theMain").empty();
         $("#theMain").append(data);
   }
-
+  //Charge le lien de la page d'actualités comme page par défaut du site
   $(window).on("load", function() {
     $.ajax({
       method: "GET",
@@ -39,6 +42,5 @@ $(document).ready(function() {
     });
     return false;
   });
-
 });
 

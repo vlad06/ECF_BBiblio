@@ -58,10 +58,6 @@ button[value="modifier"] {
   margin-right: 5rem;
 }
 /* Permet de changer le style des boutons Modifier/Valider  */
-/* .modifValidToggle {
-  background-color: lightblue;
-  color: black;
-} */
 button[value="ajoutOeuvre"] {
   background-color: darkgray;
   color: white;

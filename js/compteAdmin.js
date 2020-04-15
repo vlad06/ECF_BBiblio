@@ -1,4 +1,6 @@
-// ******************  Listeners  *************************
+// ********************************************************
+// ******************  LISTENERS  *************************
+// ********************************************************
 // listeners click pour les onglets
 document.querySelectorAll(".tab").forEach((tab) => {
   tab.addEventListener("click", function(event) {
@@ -16,7 +18,23 @@ document.querySelectorAll("select[name=candidatsJury], select[name=juryEnAttente
   .forEach((select) => {
     select.addEventListener("change", selectChange);
 });
+// listener sur les boutons pour l'arrêt des candidatures
+document.querySelector("button[value=stopJury]").addEventListener("click", function() {
+  alert("Un mail vient d'être envoyé à tous les candidats jurys n'ayant pas été sélectionnés!!");
+});
+document.querySelector("button[value=stopAuteur]").addEventListener("click", function() {
+  alert("Un mail vient d'être envoyé à tous les candidats Auteurs n'ayant pas été sélectionnés!!");
+});
 
+// ********************************************************
+// ******************  ACTIONS  ***************************
+// ********************************************************
+// pour ouvrir un tab par défaut
+document.getElementById("defaultOpen").click();
+
+// ********************************************************
+// ******************  FONCTIONS  *************************
+// ********************************************************
 // function for the tabs
 function openTab(event, tabName) {
   var tabcontent, tablinks;
@@ -33,8 +51,6 @@ function openTab(event, tabName) {
   event.target.className += " activeTab";
 
 }
-// pour ouvrir un tab par défaut
-document.getElementById("defaultOpen").click();
 
 //Pour ajouter ou refuser une candidature pour le jury
 function processCandidat(event) {
@@ -62,7 +78,6 @@ function processCandidat(event) {
   } else {
     alert("Vous devez sélectionner un candidat jury ! ");
   }
- 
 }
 
 function selectChange(event) {

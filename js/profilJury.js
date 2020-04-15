@@ -1,3 +1,7 @@
+// ********************************************************
+// ******************  VARIABLES  ***************************
+// ********************************************************
+
 // Variables pour tester le bon fonctionnement du script
 
 var oeuvresNotees = [
@@ -64,7 +68,9 @@ var oeuvresANoter = [
 ];
 
 var tabOeuvresNotees = document.querySelector("#oeuvresNotees");
-// **************************LISTENERS************************************
+// ********************************************************
+// ******************  LISTENERS  ***************************
+// ********************************************************
 // listeners pour les tabs
 document.querySelectorAll(".tab").forEach((tab) => {
   tab.addEventListener("click", function(event) {
@@ -73,8 +79,17 @@ document.querySelectorAll(".tab").forEach((tab) => {
 })
 // listener pour le select catégorie
 document.querySelector("select[name=cat]").addEventListener("change", fctChangeCat);
-// listener pour le select oeuvres non notées
-// ****************************FONCTIONS**********************************
+
+// ********************************************************
+// ******************  ACTIONS  ***************************
+// ********************************************************
+// pour ouvrir un tab par défaut
+document.getElementById("defaultOpen").click();
+//construire le tableau
+buildTable();
+// ********************************************************
+// ******************  FONCTIONS  ***************************
+// ********************************************************
 // Construit une table contenant la liste des oeuvres déjà notées
 function buildTable() {
   var table = document.createElement("table");
@@ -116,12 +131,9 @@ function buildTable() {
   table.appendChild(tableBody);
   tabOeuvresNotees.appendChild(table);
 }
-//construite le tableau
-buildTable();
+
 // affiche dans le tab Note les notes de l'oeuvre sélectionnée
 function fctClicNote(event) {
-  console.log(event.target);
-  console.log(event);
   document.querySelector(".tab").children[1].click();
 }
 
@@ -144,11 +156,11 @@ function fctChangeCat(e) {
   console.log("changeCat");
 }
 
+// Pour peupler la liste des oeuvres en attente d'être notées
 var option;
 var listeEnAttente = document.querySelector("select[name=listeAttente]");
 for(var i = 0; i < oeuvresANoter.length; i++) {
   option = document.createElement("option");
-  console.log(oeuvresANoter[i].oeuvre[0]);
   option.text = oeuvresANoter[i].oeuvre[0];
   listeEnAttente.add(option);
 }

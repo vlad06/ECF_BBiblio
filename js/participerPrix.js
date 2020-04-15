@@ -1,3 +1,5 @@
+// Code présent sur les pages devenirJury.html et participerPrix.html
+
 //*************************LISTENERS******************************* */
 //listener pour le bouton valider
 // pour signifier au candidat jury ou auteur que sa demande à bien été prise en compte
