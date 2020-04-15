@@ -1,0 +1,57 @@
+<div id="content">
+  <h1>Inscription en tant que Jury</h1>
+  <div class="devenirJury">
+    <form method="get" action="">
+        <fieldset>
+          <legend>Merci de remplir ce formulaire</legend>
+          <div class="row">
+            <div class="col-25">
+              <label for="nom">Nom : </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="nom" required/>*
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="prenom">Prénom : </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="prenom" required/>*
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="telephone">Téléphone : </label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="telephone" required/>*
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="email">E-mail : </label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" required/>*
+            </div>      
+          </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="motivations">Motivations : </label>
+              </div>
+              <div class="col-75">
+                <textarea name="motivations" placeholder="Veuillez renseigner succinctement vos motivations pour devenir Jury." cols="50" rows="10"></textarea>
+              </div>
+            </div>
+          <div class="row">
+            <button type="submit" value="valider">Valider</button>
+            <button type="reset" value="annuler">Annuler</button>
+          </div>
+          *: Champs obligatoires
+        </fieldset>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/formStyles.css">
+<script src="js/participerPrix.js"></script>

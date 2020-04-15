@@ -1,0 +1,145 @@
+/* This css is the styling base of almost all the pages
+that contains forms */
+
+h1 {
+  text-align: center;
+  margin-right: 4rem;
+}
+/* Les styles pour placer et embellir les éléments des forms  */
+* {
+  box-sizing: border-box;
+}
+/* Partie fieldset et legend  */
+fieldset {
+  width: 60%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+}
+legend {
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+/* Les inputs text, textarea  */
+input[type=text], input[type=tel], input[type=email], input[type=password] {
+  width: 90%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea {
+  width: 90%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+label {
+  padding: 1rem 1rem 1rem 0;
+  display: inline-block;
+}
+/* Le style standard de tous les boutons  */
+button[type="submit"], button[type="reset"], button[value="valider"], button[value="modifier"] {
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* Personnalisation de chacun des boutons par rapport à leur fonction  */
+button[value="modifier"] {
+  background-color: blue;
+  color: white;
+  margin-right: 5rem;
+}
+/* Permet de changer le style des boutons Modifier/Valider  */
+/* .modifValidToggle {
+  background-color: lightblue;
+  color: black;
+} */
+button[value="ajoutOeuvre"] {
+  background-color: darkgray;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[value="ajoutOeuvre"]:hover {
+  background-color: lightgray;
+}
+button[type="submit"], button[value="valider"] {
+  background-color: rgb(9, 97, 34);
+  margin-right: 5rem;
+}
+button[type="reset"] {
+  background-color: rgb(163, 48, 48);
+  margin-right: 3rem;
+}
+button[type="submit"]:hover, button[value="valider"]:hover {
+  background-color: rgb(87, 158, 107);
+}
+button[type="reset"]:hover {
+  background-color: rgb(240, 93, 93);
+}
+/* Pour la gestion du placement des éléments dans le form  */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 0.6rem;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 0.6rem;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Pour stylyser la gestion des messages d'erreur pour le form de validation du password  */
+#message {
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+/* Quand une des conditions de validation du password est vérifiée */
+.valid {
+  color: green;
+}
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+/* Tant que la condition de validation du password n'est pas vérifiée */
+.invalid {
+  color: red;
+}
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+#choixCategories span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+#choixCategories p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

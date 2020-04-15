@@ -1,72 +1,132 @@
+/* this css is the styling base for all the pages of the site */
 html {
   font-size: 10px;
+}
+/* On a ici un grid de 16 colonnes pour placer les éléments principaux de la page */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(16, [col-start] 1fr);
+  grid-template-rows: auto 1fr auto auto;
+}
+/* Chaque élément de la page est placé sur le grid */
+#theHeader {
+  grid-column: col-start / -1;
+}
+#theMenu {
+  grid-column: col-start / -1;
+}
+#theMain {
+  grid-column: col-start / span 11;
+}
+#theAside {
+  grid-column: col-start 12 / -1;
+}
+#theFooter {
+  grid-column: col-start / -1;
 }
 
 body {
   font-size: 2rem;
+  border: 5px solid #333333;
 }
-
-header {
-  background: teal;
-  border: 5px solid red;
+/* Le style pour le header */
+#theHeader {
+  background: rgb(163, 48, 48);
+  display: flex;
+  justify-content: center;
 }
+#logo {
+  width: 50%;
+  margin: 0 auto;
+}
+#logo img{
+  width: 100%;
+  margin-left: 8rem;
+}
+#theConnexion {
+  align-self: center;
+  padding-right: 6rem;
+}
+#theConnexion a {
+  color: white;
+  text-decoration: none;
+  background: rgb(163, 48, 48);
+}
+#theConnexion a:hover {
+  color: black;
+  background: white;
+  transform: scale(1.1);
+}
+/* Le style pour la barre de navigation */
+#nav {
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  background:#333333;
+  margin: 0px;
+  margin-top: -0.5rem;
+}
+#nav li a {
+  display:block;
+  padding: 1rem 1rem;
+  color:#ffffff;
+  text-decoration:none;
+  margin-right: 6rem;
+  margin-left: 6rem;
+}
+#nav li a:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: #333333;
+}
+/* Le style pour le gros titre */
 h1 {
   margin-top: 0px;
-  margin-bottom: 0px;
-  text-align: center;
-  font-size:8rem;
-  border: 1px solid red;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  font-size:6rem;
+  text-decoration: underline;
+  color: rgb(163, 48, 48);
 }
-
-.nav ul {
-  margin-top: 0px;
-  background: teal;
-  list-style: none;
-  display: flex;
-  border: 1px solid red;
+/* Le style pour la partie principale de la page */
+#theMain {
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
-
-.nav ul li {
-  flex: 1;
-  justify-content: space-evenly;
-
-}
-
-
-#container {
-  border: 5px solid green;
-}
-
 #content {
-  border: 5px solid blue;
+  width: 90%;
 }
-
-aside {
-  border: 5px solid red;
-}
-
+/* Le style pour la partie aside qui contient les fils des réseaux sociaux */
 aside {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-top: 1rem;  
-}
-
-aside iframe {
+  align-items: center;
+  justify-content: space-between;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  border: 5px solid goldenrod;
 }
-
-
+.separateur {
+  border: 2px solid black;
+  align-self: stretch;
+  margin: 2rem 4rem 2rem 4rem;
+}
+/* Le style pour le footer de la page principale */
 footer {
-  background: teal;
-  border: 5px solid red;
+  background: rgb(163, 48, 48);
+  display: grid;
+  grid-template-columns: auto auto;
 }
-
-
-
+#leftAndRights {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: flex-start;
+  margin-left: 5rem;
+}
+#leftAndRights img {
+  width: 10%;
+  margin-top: 1rem;
+}
 #reseauxSociaux img {
   height: 6rem;
   width: 6rem;
@@ -74,12 +134,12 @@ footer {
   margin-left: 2rem;
   margin-right: 2rem;
 }
-
 #reseauxSociaux {
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
   list-style-type: none;
+  align-items: center;
   justify-content: flex-end;
-  
+  margin-right: 7em;
 }
+

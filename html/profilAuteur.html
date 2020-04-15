@@ -1,0 +1,56 @@
+<!-- Les éditeurs peuvent choisir ici une oeuvre dont la note est figée, 
+afin d'en télécharger les avis au format xml pour pouvoir les afficher sur
+leur site ou reseau social. -->
+<div id="content">
+  <h1>Bienvenue M. (nom Auteur ou Editeur)</h1>
+  <div id="auteurEditeur">
+
+    <div id="gridContainer">
+      <div id="selectAndImport">
+        <p>Choisissez une oeuvre</p>
+        <!-- Liste des oeuvres ayant reçues au moins un avis -->
+        <select id="listeOeuvres" size="10">
+          <!-- <option>--Choisissez une oeuvre--</option> -->
+        </select>
+        <button type="button" value="importXml">Importer les avis au format XML</button>
+      </div>
+      <div id="listeAvisJury">
+        <div id="enteteListeAvis" class="grid1">
+          <label for="titre">Titre : </label><span class="titre"></span>
+          <label for="auteur">Auteur : </label><span class="auteur"></span>
+          <label for="categorie">Catégorie : </label><span class="categorie"></span>
+          <label for="date">Date : </label><span class="date"></span>
+        </div>
+        <hr />
+        <div class="tableauAvis grid1">
+          <label for="avis">Avis N°<span class="numeroAvis"></span></label>
+          <table class="tableAvis">
+            <thead>
+              <tr>
+                <th>Style</th>
+                <th>Illustrations</th>
+                <th>Mise en page</th>
+                <th>Emotion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td name="one"></td>
+                <td name="two"></td>
+                <td name="three"></td>
+                <td name="four"></td>
+              </tr>
+            </tbody>
+          </table>
+          <label for="comment" >Commentaire : </label>
+          <textarea name="commentaires" cols="22" rows="3" disabled></textarea>
+          <div class="separator"></div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/profilAuteur.css">
+<script src="js/profilAuteur.js"></script>

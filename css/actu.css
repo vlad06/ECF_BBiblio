@@ -1,0 +1,28 @@
+  .enteteActu {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .dateActu {
+    
+  } */
+  .actu {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 0;
+  }
+  .shareIt {
+    margin-left: 4rem;
+    padding: 1rem;
+    background: rgb(46, 240, 210);
+  }
+  .shareIt:hover {
+    color: white;
+    background: rgb(39, 163, 144);
+    transform: scale(1.1);
+    cursor: pointer;
+  }

@@ -1,0 +1,40 @@
+#resumeOeuvre img, #bioAuteur img{
+  width: 180px;
+}
+.auteur, .oeuvre {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.aGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 0.5rem 0.5rem;
+}
+img[src*="pierre"] {
+  grid-column: 1 / 2;
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.auteur, .bio {
+  grid-column: 2 / 3;
+  margin-top: 1.5rem;
+}
+.separateur {
+  grid-column: 3 / 4;
+  border: 2px solid black;
+  justify-self: stretch;
+}
+img[src*="Guerrier"] {
+  grid-column: 4 / 5;
+  float: left;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.oeuvre, .resume {
+  grid-column: 5 / 6;
+  margin-top: 1.5rem;
+}
+

@@ -1,0 +1,192 @@
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+td {
+  font-size: 1.5rem;
+  width: 150px;
+  height: 25px;
+  vertical-align: center;
+  text-align: center;
+}
+th {
+  font-size: 2rem;
+  width: 150px;
+  height: 25px;
+}
+/* Le style quand on survole la cellule lien (voir les notes) du tableau des 
+  oeuvres déjà notées */
+.active:hover {
+  cursor: pointer;
+  background-color: rgb(15, 78, 173);
+  color: white;
+}
+
+#profilJury {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #categoriesDuJury {
+  margin-top: 2rem;
+  text-align: center;
+} */
+select {
+  padding: .5rem;
+  width: 100%;
+}
+select[name="listeAttente"] {
+  margin-top: 1rem;
+}
+textarea {
+  resize: none;
+}
+
+/* Style the tab */
+.tab {
+  width: 700px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.activeTab {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+}
+
+#downloadPdfBook {
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+}
+#downloadPdfBook:hover {
+  cursor: pointer;
+}
+button[value="valider"] {
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[value="valider"] {
+  background-color: rgb(9, 97, 34);
+  margin-right: 5rem;
+}
+button[value="valider"]:hover {
+  background-color: rgb(87, 158, 107);
+}
+/* Le grid pour la mise en page du tab Comparer */
+.formgrid {
+  display: grid;
+  grid-template-columns: 2rem 1fr 0.2fr 2rem 1fr 0.2fr;
+  grid-gap: 0.5em 0.5em;
+  grid-auto-flow: dense;
+  align-items: center;
+}
+#romanFrancais {
+  grid-column: 1 / 2;
+}
+label[for="romanFrancais"] {
+  grid-column: 2 / 4;
+}
+#romanEtranger {
+  grid-column: 4 / 5;
+}
+label[for="romanEtranger"] {
+  grid-column: 5 / 7;
+}
+#documentaire {
+  grid-column: 1 / 2;
+}
+label[for="documentaire"] {
+  grid-column: 2 / 4;
+}
+#biographie {
+  grid-column: 4 / 5;
+}
+label[for="biographie"] {
+  grid-column: 5 / 7;
+}
+#listOeuvre1 {
+  grid-column: 2 / 3;
+}
+#listOeuvre2 {
+  grid-column: 5 / 6;
+}
+label[for="style1"] {
+  grid-column: 2 / 3;
+}
+#style1 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+label[for="style2"] {
+  grid-column: 5 / 6;
+}
+#style2 {
+  grid-column: 6 / 7;
+  grid-row: 4 / 5;
+}
+label[for="illustration1"] {
+  grid-column: 2 / 3;
+}
+#illustration1 {
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+}
+label[for="illustration2"] {
+  grid-column: 5 / 6;
+}
+#illustration2 {
+  grid-column: 6 / 7;
+  grid-row: 5 / 6;
+}
+label[for="miseEnPage1"] {
+  grid-column: 2 / 3;
+}
+#miseEnPage1 {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+label[for="miseEnPage2"] {
+  grid-column: 5 / 6;
+}
+#miseEnPage2 {
+  grid-column: 6 / 7;
+  grid-row: 6 / 7;
+}
+label[for="emotion1"] {
+  grid-column: 2 / 3;
+}
+#emotion1 {
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+}
+label[for="emotion2"] {
+  grid-column: 5 / 6;
+}
+#emotion2 {
+  grid-column: 6 / 7;
+  grid-row: 7 / 8;
+}

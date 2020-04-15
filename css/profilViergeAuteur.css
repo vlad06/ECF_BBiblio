@@ -1,0 +1,117 @@
+form {
+  width: 50%;
+  float: left;
+}
+h1 {
+  text-align: center;
+  margin-right: 4rem;
+}
+/* Les styles pour placer et embellir les éléments des forms  */
+* {
+  box-sizing: border-box;
+}
+/* Partie fieldset et legend  */
+fieldset {
+  /* width: 50%; */
+  height: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  border: 2px solid black;
+}
+legend {
+  font-size: 2rem;
+  border: 2px solid black;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+/* Les inputs text, textarea  */
+input[type=text], input[type=tel], input[type=email], input[type=password], input[type=date] {
+  width: 90%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea {
+  width: 90%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+label {
+  padding: 1rem 1rem 1rem 0;
+  display: inline-block;
+}
+/* Le style standard de tous les boutons  */
+button[value="ajouter"], button[type="reset"], button[value="valider"], button[value="modifier"] {
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* Personnalisation de chacun des boutons par rapport à leur fonction  */
+button[value="modifier"] {
+  background-color: blue;
+  color: white;
+  margin-right: 5rem;
+}
+
+button[value="ajoutOeuvre"], button[value="btnImportCover"], button[value="btnImportOeuvre"] {
+  background-color: rgb(191, 123, 42);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[value="ajoutOeuvre"] {
+  margin-top: 1rem;
+}
+button[value="btnImportCover"], button[value="btnImportOeuvre"] {
+  float: right;
+  margin-right: 5rem;
+}
+button[value="ajoutOeuvre"]:hover, button[value="btnImportCover"]:hover, button[value="btnImportOeuvre"]:hover {
+  background-color: rgb(238, 187, 125);
+}
+#listeOeuvres {
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
+}
+button[value="ajouter"], button[value="valider"] {
+  background-color: rgb(9, 97, 34);
+  margin-right: 5rem;
+}
+button[type="reset"] {
+  background-color: rgb(163, 48, 48);
+  margin-right: 3rem;
+}
+button[value="ajouter"]:hover, button[value="valider"]:hover {
+  background-color: rgb(87, 158, 107);
+}
+button[type="reset"]:hover {
+  background-color: rgb(240, 93, 93);
+}
+/* Pour la gestion du placement des éléments dans le form  */
+.col-25 {
+  float: left;
+  width: 40%;
+  margin-top: 0.6rem;
+}
+.col-75 {
+  float: left;
+  width: 60%;
+  margin-top: 0.6rem;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#divAjoutOeuvre {
+  display: none;
+}

@@ -1,0 +1,67 @@
+<div id="content">
+  <h1>Bonjour et Bienvenue M. Jury</h1>
+  <div id="profilViergeJury">
+    <form method="get" action="">
+      <fieldset>
+        <legend>Veuillez vérifier et finaliser votre profil</legend>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="nom" value="votreNom" disabled />
+          </div>
+          <div class="col-25">
+            <button type="button" value="modifier" id="modifCat1">Modifier</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="text" id="prenom" value="votrePrenom" disabled />
+          </div>
+          <div class="col-25">
+            <button type="button" value="modifier" id="modifCat2">Modifier</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="tel" id="telephone" value="0612657643" disabled />
+          </div>
+          <div class="col-25">
+            <button type="button" value="modifier" id="modifCat3">Modifier</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="email" id="email" value="jury@jury.com" disabled />
+          </div>
+          <div class="col-25">
+            <button type="button" value="modifier" id="modifCat4">Modifier</button>
+          </div>  
+        </div>
+        <div id="choixCategories">
+          <span>Choisissez au moins une catégorie pour laquelle vous voulez jurer : </span>
+          <p>
+            <input type="checkbox" id="romanFrancais">
+            <label for="romanFrancais">Meilleur roman français</label>
+          </p>
+          <p>
+            <input type="checkbox" id="romanEtranger">
+            <label for="romanEtranger">Meilleur roman étranger</label>
+          </p>
+          <p>
+            <input type="checkbox" id="documentaire">
+            <label for="documentaire">Meilleur documentaire</label>
+          </p>
+          <p>
+            <input type="checkbox" id="biographie">
+            <label for="biographie">Meilleure biographie</label>
+          </p>
+        </div>
+        <div class="row">
+          <button type="button" value="valider">Valider</button>
+          <button type="reset" value="annuler">Annuler</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/formStyles.css">
+<script src="js/profilViergeJury.js"></script>

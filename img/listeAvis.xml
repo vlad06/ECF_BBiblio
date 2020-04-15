@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><livre>
+   <categorie>biographie</categorie>
+   <titre>Argot fransé t'as vu</titre> 
+   <auteur>djoul</auteur>
+   <date>2020</date>
+   <editeur>goncourt</editeur> 
+   <listeAvis>
+      <avis num="1">
+         <style>1</style>
+         <illustrations>1</illustrations>
+         <miseEnPage>1</miseEnPage>
+         <emotion>1</emotion>
+         <commentaire>aïe mes yeux</commentaire>
+      </avis>
+   <avis num="2">
+         <style>1</style>
+         <illustrations>1</illustrations>
+         <miseEnPage>1</miseEnPage>
+         <emotion>1</emotion>
+         <commentaire>pauvre france</commentaire>
+      </avis><avis num="3">
+         <style>1</style>
+         <illustrations>1</illustrations>
+         <miseEnPage>1</miseEnPage>
+         <emotion>1</emotion>
+         <commentaire>c'est triste</commentaire>
+      </avis><avis num="4">
+         <style>1</style>
+         <illustrations>1</illustrations>
+         <miseEnPage>1</miseEnPage>
+         <emotion>1</emotion>
+         <commentaire>...</commentaire>
+      </avis><avis num="5">
+         <style>1</style>
+         <illustrations>1</illustrations>
+         <miseEnPage>1</miseEnPage>
+         <emotion>1</emotion>
+         <commentaire>j'aurais mieux fait de me casser les deux bras !</commentaire>
+      </avis></listeAvis>
+</livre>

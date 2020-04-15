@@ -1,0 +1,51 @@
+<div id="content">
+  <h1>première connexion</h1>
+  <div class="premiereConnexion">
+    <form method="get" action="html/pageDeTest.html">
+  <fieldset>
+    <legend>Merci de saisir un nouveau mot de passe</legend>
+    <div class="row">
+      <div class="col-25">
+        <label for="login">Login : </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="login" placeholder="loginFromEmailLink" disabled required/>*
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Password : </label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>*
+      </div>      
+    </div>
+    <!-- <div class="row">
+      <div class="col-25">
+        <label for="confirmPassword">Confirm Password : </label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="confirmPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required/>*
+      </div>      
+    </div> -->
+    <div class="row">
+      <button type="submit" value="envoyer">Valider</button>
+      <button type="reset" value="annuler">Annuler</button>
+    </div>
+    *: Champs obligatoires
+    <hr />
+    <div id="message">
+      <h3>Votre password doit contenir :</h3>
+      <p id="minuscule" class="invalid">Une lettre <b>minuscule</b></p>
+      <p id="majuscule" class="invalid">Une <b>lettre majuscule</b></p>
+      <p id="nombre" class="invalid">Un <b>chiffre</b></p>
+      <p id="longueur" class="invalid"><b>10 caractères</b> minimum</p>
+    </div>
+  </fieldset>
+  
+</form>
+
+  </div>
+</div>
+<script src="js/passwordValidation.js"></script>
+<link rel="stylesheet" type="text/css" href="css/formStyles.css">

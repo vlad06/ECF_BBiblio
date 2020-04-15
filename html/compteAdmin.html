@@ -1,0 +1,163 @@
+<div id="content">
+  <h1>Bienvenue Admin</h1>
+  <div id="compteAdmin">
+
+    <div id="partieTabDetails">
+
+      <div class="tab">
+        <button class="tablinks" value="accueil" id="defaultOpen">Accueil</button>
+        <button class="tablinks" value="gestionNews">Gestion News</button>
+        <button class="tablinks" value="gestionJury">Gestion Jury</button>
+        <button class="tablinks" value="gestionAuteur">Gestion Auteur</button>
+        <button class="tablinks" value="infosJury">Infos Jury</button>
+        <button class="tablinks" value="infosOeuvres">Infos Oeuvres</button>
+      </div>
+      
+      <div id="accueil" class="tabcontent">
+        <h2>Accueil</h2>
+        <div id="gridContainer">
+          <div id="divListeJuryValide">
+            <p>Jurés actuellement sélectionnés</p>
+            <select name="selectJury" size="20" disabled>
+              <option>Nom Jury 1</option>
+              <option>Nom Jury 2</option>
+              <option>Nom Jury 3</option>
+            </select>
+            <button type="button" value="stopJury">Arrêter les sélections de jury</button>
+          </div>
+          <div id="divListeAuteurValide">
+            <p>Auteurs / Editeurs actuellement sélectionnés</p>
+            <select name="selectAuteur" size="20" disabled>
+              <option>Nom Auteur / Editeur 1</option>
+              <option>Nom Auteur / Editeur 2</option>
+              <option>Nom Auteur / Editeur 3</option>
+            </select>
+            <button type="button" value="stopAuteur">Arrêter les sélections d'auteurs</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="gestionNews" class="tabcontent">
+        <h2>Gestion des news</h2>
+
+      </div>
+      
+      <div id="gestionJury" class="tabcontent">
+        <h2>Gestion des candidats jury</h2>
+        <div id="gridContainer">
+          <div class="gridItem">
+            <div id="divCandidatsJury">
+              <p>Candidatures jury : </p>
+              <!-- Cette liste sera peuplée par les personnes 
+              souhaitant candidater pour une place de jury et ayant 
+              donc rempli le form de candidature jury -->
+              <select name="candidatsJury" size="10">
+                <option>Nom Jury 1</option>
+                <option>Nom Jury 2</option>
+                <option>Nom Jury 3</option>
+              </select>
+            </div>
+            <div id="divJuryEnAttente">
+              <p>En attente de validation : </p>
+              <!-- Cette liste sera peuplée par les personnes ayant 
+              reçu un mail d'acception pour leur candidature mais 
+              n'ayant pas encore finalisé leur profil -->
+              <select name="juryEnAttente" size="10">
+                <option>Nom Jury 7</option>
+                <option>Nom Jury 8</option>
+              </select>
+            </div>
+            <div id="divJuryActuel">
+              <p>Liste jury actuel :</p>
+              <!-- Cette liste contiendra les membres du jury 
+              ayant finalisé leur profil -->
+              <select name="juryActuel" size="10">
+                <option>Nom Jury 4</option>
+                <option>Nom Jury 5</option>
+                <option>Nom Jury 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="gridItem">
+            <div id="divInfosJury">
+              <!-- Ce formulaire permet de voir les informations 
+              du membre du jury sélectionné, qu'il soit candidat, en attente, 
+              ou jury actif.
+              Les informations seront récupérées en bdd. -->
+              <form method="get" action="" id="formInfosJury">
+                <fieldset>
+                  <legend>Informations : </legend>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="nom">Nom : </label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" name="nom" required disabled/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="prenom">Prénom : </label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" name="prenom" required disabled/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="telephone">Téléphone : </label>
+                    </div>
+                    <div class="col-75">
+                      <input type="tel" name="telephone" required disabled/>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="email">E-mail : </label>
+                    </div>
+                    <div class="col-75">
+                      <input type="email" name="email" required disabled/>
+                    </div>      
+                  </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="motivations">Motivations : </label>
+                      </div>
+                      <div class="col-75">
+                        <textarea name="motivations" cols="50" rows="10" disabled></textarea>
+                      </div>
+                    </div>
+                  <div class="row">
+                    <button type="button" value="accepterCandidat">Accepter le candidat</button>
+                    <button type="button" value="refuserCandidat">Refuser le candidat</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+
+      <div id="gestionAuteur" class="tabcontent">
+        <h2>Gestion des candidats auteur</h2>
+        
+      </div>
+      
+      <div id="infosJury" class="tabcontent">
+        <h2>Informations Jury</h2>
+
+      </div>
+      
+      <div id="infosOeuvres" class="tabcontent">
+        <h2>Informations oeuvres notées</h2>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/compteAdmin.css">
+<script src="js/compteAdmin.js"></script>

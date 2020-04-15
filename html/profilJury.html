@@ -1,0 +1,111 @@
+<!-- le jury arrive ici lors da la première validation de son profil et lors d'une 
+  connexion à son compte, des appels sont faits à la base de données pour 
+  récupérer les informations le concernant: 
+    - les catégories choisies
+    - les oeuvres déjà notées
+    - les oeuvres restants à noter -->
+<div id="content">
+  <!-- on récupère le nom du jury dans la bdd grâce à ses id de connexion -->
+  <h1>Bienvenue M. <span id="nomJury">(nom du jury)</span></h1>
+  <p><b>Oeuvres déjà notées : </b></p>
+  <div id="profilJury">
+    
+    <div id="partieOeuvres">
+      <!-- on récupère les oeuvres que le jury à déjà notées en bdd-->
+      <div id="oeuvresNotees"></div>
+      <!-- les oeuvres en attente sont celles qui n'ont pas encore reçues de notes
+        dans les catégories choisies par le jury -->
+      <div id="oeuvresEnAttente">
+        <!-- liste les catégories choisies par le jury lors de la création 
+          de son profil-->
+        <div id="categoriesDuJury">
+          <p><b>Oeuvres restant à noter : </b></p>
+          <select name="cat">
+            <option value="">--Choisissez une catégorie--</option>
+            <option value="toutesCategories">Toutes les catégories</option>
+            <option value="romanFrancais">Meilleur roman français</option>
+            <option value="romanEtranger">Meilleur roman étranger</option>
+            <option value="documentaire">Meilleur documentaire</option>
+            <option value="biographie">Meilleure biographie</option>
+          </select>
+          
+        </div>
+        <div id="listeOeuvresEnAttente">
+          
+          <select name="listeAttente" size="20">
+
+          </select>
+        </div>
+
+      </div>
+    </div>
+    <div id="partieTabDetails">
+      <div class="tab">
+        <button class="tablinks" >Oeuvre</button>
+        <button class="tablinks" >Note</button>
+        <button class="tablinks" >Comparer</button>
+      </div>
+      
+      <div id="Oeuvre" class="tabcontent">
+        <p id="infosOeuvre">INFOS OEUVRE</p>
+        <p>Catégorie : <span id="categorie"></span></p>
+        <p>Titre : <span id="titre"></span></p>
+        <p>Auteur : <span id="auteur"></span></p>
+        <p>Couverture : <span id="couverture"></span></p>
+        <p><button type="button" id="downloadPdfBook">Télécharger au format pdf</button></p>
+      </div>
+      
+      <div id="Note" class="tabcontent">
+        <p>Style : <span id="categorie"></span></p>
+        <p>Illustrations : <span id="titre"></span></p>
+        <p>Mise en page : <span id="auteur"></span></p>
+        <p>Emotion : <span id="couverture"></span></p>
+        <p>Commentaire :</p>
+        <textarea name="motivations" placeholder="Saisissez un commentaire" cols="50" rows="10"></textarea>
+        <p><button type="button" value="valider">Valider</button></p>
+      </div>
+      
+      <div id="Comparer" class="tabcontent">
+        <div class="formgrid">
+          <input type="checkbox" id="romanFrancais">
+          <label for="romanFrancais">Meilleur roman français</label>
+          <input type="checkbox" id="romanEtranger">
+          <label for="romanEtranger">Meilleur roman étranger</label>
+          <input type="checkbox" id="documentaire">
+          <label for="documentaire">Meilleur documentaire</label>
+          <input type="checkbox" id="biographie">
+          <label for="biographie">Meilleure biographie</label>
+          <select name="listOeuvre" id="listOeuvre1">
+            <option value="">--Choisissez une oeuvre--</option>
+          </select>
+          <select name="listOeuvre" id="listOeuvre2">
+            <option value="">--Choisissez une oeuvre--</option>
+          </select>
+
+          <label for="style1">Style : </label>
+          <span id="style1">1</span>
+          <label for="style2">Style : </label>
+          <span id="style2">2</span>
+
+          <label for="illustration1">Illustration : </label>
+          <span id="illustration1">1</span>
+          <label for="illustration2">Illustration : </label>
+          <span id="illustration2">2</span>
+
+          <label for="miseEnPage1">Mise en page : </label>
+          <span id="miseEnPage1">1</span>
+          <label for="miseEnPage2">Mise en page : </label>
+          <span id="miseEnPage2">2</span>
+
+          <label for="emotion1">Emotion : </label>
+          <span id="emotion1">1</span>
+          <label for="emotion2">Emotion : </label>
+          <span id="emotion2">2</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/profilJury.css">
+<script src="js/profilJury.js"></script>

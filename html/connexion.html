@@ -1,0 +1,34 @@
+<div id="content">
+  <h1>Connexion</h1>
+  <div class="connexion">
+    
+    <form method="get" action="">
+        <fieldset>
+          <legend>Saisissez votre login et votre password</legend>
+          <div class="row">
+            <div class="col-25">
+              <label for="login">Login : </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="login" required/>*
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="password">Password : </label>
+            </div>
+            <div class="col-75">
+              <input type="password" id="password" required/>*
+            </div>      
+          </div>
+          <div class="row">
+            <button type="button" value="valider">Valider</button>
+            <button type="reset" value="annuler">Annuler</button>
+          </div>
+          *: Champs obligatoires
+        </fieldset>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/formStyles.css">
+<script src="js/redirectionProfil.js"></script>

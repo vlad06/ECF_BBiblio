@@ -1,0 +1,116 @@
+<div id="content">
+  <h1>Bonjour et bienvenue</h1>
+  <div id="ProfilViergeAuteur">
+    <div id="divVerifAuteur">
+      <form id="profilAuteur" method="get" action="">
+        <fieldset>
+          <legend>Veuillez vérifier votre profil</legend>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="nom" value="votreNom" disabled />
+            </div>
+            <div class="col-25">
+              <button type="button" value="modifier" id="modifCat1">Modifier</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="prenom" value="votrePrenom" disabled />
+            </div>
+            <div class="col-25">
+              <button type="button" value="modifier" id="modifCat2">Modifier</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="text" id="nomEditeur" value="nomEditeur" disabled />
+            </div>
+            <div class="col-25">
+              <button type="button" value="modifier" id="modifCat2">Modifier</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="tel" id="telephone" value="0612657643" disabled />
+            </div>
+            <div class="col-25">
+              <button type="button" value="modifier" id="modifCat3">Modifier</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <input type="email" id="email" value="jury@jury.com" disabled />
+            </div>
+            <div class="col-25">
+              <button type="button" value="modifier" id="modifCat4">Modifier</button>
+            </div>  
+          </div>
+          <div id="ajouterUneOeuvre">
+            <button type="button" value="ajoutOeuvre">Ajouter une oeuvre</button>
+            <select id="listeOeuvres">
+              <option>--Vos oeuvres--</option>
+            </select>
+          </div>
+          <div class="row">
+            <button type="button" value="valider">Valider</button>
+            <button type="reset" value="annuler">Annuler</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="divAjoutOeuvre">
+      <form id="ajouterOeuvreAuteur" method="get" action="">
+        <fieldset>
+          <legend>Ajouter une oeuvre</legend>
+          <div class="row">
+            <div class="col-25">
+              <label for="titre">Titre : </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="titre" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="auteur">Auteur : </label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="auteur" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="date">date : </label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="date" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <label for="cover">Image de couverture : </label>
+            </div>
+            <div class="col-25">
+              <button type="button" value="btnImportCover">Importer image</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+              <label for="cover">Oeuvre format pdf : </label>
+            </div>
+            <div class="col-25">
+              <button type="button" value="btnImportOeuvre">Importer oeuvre</button>
+            </div>
+          </div>
+
+          <div class="row">
+            <button type="button" value="ajouter">Ajouter</button>
+            <button type="reset" value="annuler">Annuler</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/profilViergeAuteur.css">
+<script src="js/profilViergeAuteur.js"></script>
